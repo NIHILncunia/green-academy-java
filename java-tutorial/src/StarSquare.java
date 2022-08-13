@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class StarSquare {
-
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int number;
@@ -21,5 +20,4 @@ public class StarSquare {
 		
 		scanner.close();
 	}
-
 }
