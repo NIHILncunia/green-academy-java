@@ -10,6 +10,7 @@ public class NumberSquare {
 		
 		System.out.println();
 		
+		// 5 기준 5*5만큼의 숫자 박스가 나타남.
 		for (int row = 1, v = 1; row <= number; row++) {
 			for (int col = 1; col <= number; col++) {
 				System.out.printf("%2d  ", v++);
