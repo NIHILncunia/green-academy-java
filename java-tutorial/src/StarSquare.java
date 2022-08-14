@@ -10,9 +10,9 @@ public class StarSquare {
 		
 		System.out.println();
 		
-		for (int row = 1, v = 1; row <= number; row++) {
+		for (int row = 1; row <= number; row++) {
 			for (int col = 1; col <= number; col++) {
-				System.out.printf(" *", v++);
+				System.out.print(" *");
 			}
 			
 			System.out.println();
