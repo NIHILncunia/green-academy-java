@@ -1,17 +1,18 @@
 import java.util.Scanner;
 
-public class StarXPattern {
+public class Main {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int number;
+		int number, mid;
 		
 		System.out.print("출력할 줄 수 입력 : ");
 		number = scanner.nextInt();
+		mid = (number+1)/2;
 
 		System.out.println();
 
 		for (int row = 1, start, end; row <= number; row++) {
-			if (row <= 3) {
+			if (row <= mid) {
 				start = row;
 				end = number + 1 - row;
 			} else {
