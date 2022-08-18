@@ -1,6 +1,7 @@
+
 import java.util.Scanner;
 
-public class Main {
+public class StarXPattern {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int number, mid;
@@ -20,7 +21,7 @@ public class Main {
 				end = row;
 			}
 			for (int col = 1; col <= end; col++) {
-				if ((col > start && col < end) || (col < start && col < end)) {
+				if ((col > start && col < end) || (col < start)) {
 					System.out.print("  ");
 				} else {
 					System.out.print(" *");
