@@ -2,9 +2,15 @@ import java.util.Scanner;
 
 public class StarDiamondOutline {
 	public static void main(String[] args) {
-//		Scanner scanner = new Scanner(System.in);
-		final int number = 5, mid;
+		Scanner scanner = new Scanner(System.in);
+		int number, mid;
+		
+		System.out.print("출력할 줄 수 입력 : ");
+		number = scanner.nextInt();
+		
 		mid = (number + 1) / 2;
+		
+		System.out.println();
 		
 		for (int row = 1, start, end; row <= number; row++) {
 			if (row <= mid) {
@@ -25,5 +31,7 @@ public class StarDiamondOutline {
 			
 			System.out.println();
 		}
+		
+		scanner.close();
 	}
 }
